@@ -1,0 +1,329 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../views/login.html">
+    <link rel="stylesheet" href="../views/styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Landing page</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html" id="nav_logo"><i class="fa-solid fa-utensils"></i> La Tavola</a>
+
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#cadastro">cadastro</a>
+                </li>
+                <li class="nav-item">
+                    <button id="theme-toggle">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                </li>
+            </ul>
+
+            <button class="btn-default" style="color: white;" onclick="location.href='finalizar.html';">
+                Pedidos
+            </button>
+            
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default"   style="color: white;">
+                Peça aqui
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div id="cta">
+            
+                <a href="cardapio.html" class="btn-default more-dishes-btn">
+                    Ver cardapio
+                </a>   
+                
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Melhores Opções</h2>
+            <h3 class="section-subtitle">Nossos pratos especiais</h3>
+        
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="../images/lch-1.png" class="dish-image" alt="Delícia Dupla">
+                    <h3 class="dish-title">Delícia Dupla</h3>
+                    <span class="dish-description">
+                        Nosso lanche exclusivo combina a suculência do frango desfiado com a maciez da carne, tudo envolto em um queijo derretido e um molho cremoso irresistível.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$20,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping" style="color: white;"></i>
+                        </button>
+                    </div>
+                </div>
+        
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="../images/pf-1.png" class="dish-image" alt="Completo Saudável">
+                    <h3 class="dish-title">Completo Saudável</h3>
+                    <span class="dish-description">
+                        Combina frango desfiado suculento com batata doce caramelizada, arroz branco, legumes frescos e coloridos e feijão temperado. Uma explosão de sabores em cada garfada!
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$20,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping" style="color: white;"></i>
+                        </button>
+                    </div>
+                </div>
+        
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="../images/dk-1 (1).png" class="dish-image" alt="Brisa Azul">
+                    <h3 class="dish-title">Brisa Azul</h3>
+                    <span class="dish-description">
+                        Nosso Brisa Azul é preparado com vodka premium, curaçau blue e um toque de limão siciliano, finalizado com uma rodela de laranja e um raminho de hortelã.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$20,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping" style="color: white;"></i>
+                        </button>
+                    </div>
+                </div>
+        
+                <div class="dish">
+                    <img src="../images/1.png" class="dish-image" alt="Espetinho Prime">
+                    <h3 class="dish-title">Espetinho Prime</h3>
+                    <span class="dish-description">
+                        Preparado com cortes selecionados de picanha nobre, cada pedaço é temperado na medida certa para realçar o sabor natural da carne.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$20,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping" style="color: white;"></i>
+                        </button>
+                    </div>
+                </div>
+        
+            </div>
+        
+            <a href="cardapio.html" class="btn-default more-dishes-btn">
+                Ver mais pratos
+            </a>
+        </section>
+        
+
+        <section id="testimonials">
+            <img src="../images/prt-10.png" id="testimonial_chef" alt="">
+
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Avaliações
+                </h2>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="../images/08.16-post-mulheres--removebg-preview.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Carolina Mendes
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Uma verdadeira obra-prima gastronômica! O equilíbrio entre o espaguete de tinta de lula e os camarões flambados foi impecável. Cada garfada parecia uma viagem ao Mediterrâneo. O toque cítrico do limão siciliano elevou o prato a um nível divino. Simplesmente inesquecível!"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="../images//20-anos-do-estatuto-da-pessoa-idosa-removebg-preview.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Rafael Antunes
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "O Pérola Negra é um dos pratos mais surpreendentes que já provei. A textura perfeita do espaguete, combinada com o sabor delicado dos camarões e o frescor do limão siciliano, é de tirar o fôlego. Um prato que encanta os olhos e explode em sabor. Parabéns ao chef!"
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="feedback">
+                        <img src="../images/pessoa-de-classe-elegante-removebg-preview.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Fernanda Oliveira
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Este prato é um verdadeiro luxo! O toque salgado da tinta de lula, harmonizado com a leveza dos camarões, é uma experiência única. O aroma fresco do limão siciliano finaliza com perfeição. Nunca pensei que um prato pudesse ser tão elegante e saboroso ao mesmo tempo. Recomendo de olhos fechados!"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="cadastro">
+                           
+                <div id="form-cadastro" class="tab-content active">
+                    <h2>Cadastre-se</h2>
+                    <p>Insira seus dados para criar uma conta e aproveitar nossos serviços!</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email-cadastro">E-mail</label>
+                            <input type="email" id="email-cadastro" name="email" placeholder="Seu e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="senha-cadastro">Senha</label>
+                            <input type="password" id="senha-cadastro" name="senha" placeholder="Sua senha" required>
+                        </div>
+                        <button type="button" class="btn-cadastro">Cadastrar</button>
+                    </form>
+                </div>
+        </section>
+        
+        
+
+    </main>
+
+    <footer>
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2024 - Todos os direitos reservados
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="../models/script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app-compat.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-auth-compat.js"></script>  
+    <script>
+    const firebaseConfig = {
+    apiKey: "AIzaSyBi1O-RwlnJr65pfzXBhDktWqWHx0d0aG4",
+    authDomain: "arabe-a94cf.firebaseapp.com",
+    projectId: "arabe-a94cf",
+    storageBucket: "arabe-a94cf.firebasestorage.app",
+    messagingSenderId: "1055492362563",
+    appId: "1:1055492362563:web:b97136b9e66b9a86679ff6",
+    measurementId: "G-YKLPMFLJ7G"
+  };
+  firebase.initializeApp(firebaseConfig);
+
+  firebase.auth().on
+    </script>
+</body>
+</html>

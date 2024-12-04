@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('header.css');
+@import url('home.css');
+@import url('menu.css');
+@import url('testimonials.css');
+@import url('footer.css');
+
+:root {
+    /* Paleta de amarelo */
+    --color-primary-1: #fff9ea;
+    --color-primary-2: #ffe8b4;
+    --color-primary-3: #f8d477;
+    --color-primary-4: #ffe100;
+    --color-primary-5: #ffcb45;
+    --color-primary-6: #e9a209;
+     
+     /* Paleta de vermelho vibrante */
+    --color-red-vibrant-1: #ffe5e5; /* Vermelho muito claro */
+    --color-red-vibrant-2: #ff9999; /* Vermelho suave e vibrante */
+    --color-red-vibrant-3: #ff6666; /* Vermelho médio vibrante */
+    --color-red-vibrant-4: #ff3333; /* Vermelho vibrante intenso */
+    --color-red-vibrant-5: #ff0000; /* Vermelho puro e vibrante */
+    --color-red-vibrant-6: #cc0000; /* Vermelho profundo e intenso */
+ 
+     /* Paleta de vinho */
+     --color-wine-1: #fbe9ee; /* Vinho claro quase branco */
+     --color-wine-2: #f5c2cf; /* Vinho rosado */
+     --color-wine-3: #e68fa7; /* Vinho médio */
+     --color-wine-4: #cc5c7f; /* Vinho vibrante */
+     --color-wine-5: #992a4d; /* Vinho escuro */
+     --color-wine-6: #66001f; /* Vinho profundo */
+
+
+    --color-neutral-0: #fff;
+    --color-neutral-1: #000000;
+    --color-neutral-2: #992a4d;
+    --color-neutral-3: #990000;
+
+
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme {
+    --background-color: var(--color-neutral-1);
+    --text-color: var(--color-neutral-0);
+}
+
+body.dark-theme #theme-toggle i {
+    transform: rotate(180deg);
+}
+
+section {
+    padding: 28px 8%;
+}
+
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-red-vibrant-5);
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.btn-default:hover {
+    background-color: var(--color-red-vibrant-6);
+}
+
+.social-media-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: var(--color-neutral-0);
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--color-neutral-1);;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .3s ease;
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    color: var(--color-red-vibrant-6);
+    font-size: 1.563rem;
+}
+
+.section-subtitle {
+    font-size: 2.1875rem;
+} 
+
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+#theme-toggle:focus {
+    outline: none;
+}
+
+#theme-toggle i {
+    transition: transform 0.3s ease;
+}
+
+#cadastro {
+    background-image: url('../../images/istockphoto-1192903472-612x612.jpg'); /* Caminho da sua imagem */
+    background-size: cover; /* Faz a imagem preencher a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    padding: 60px 20px; /* Espaçamento interno */
+    color: white; /* Garante que o texto fique visível */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Adiciona sombra ao texto */
+}
+
+
+#cadastro h2 {
+    font-size: 32px;
+    color: var(--color-red-vibrant-5); /* Cor do título */
+    margin-bottom: 16px;
+}
+
+#cadastro p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+#form-cadastro {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn-cadastro {
+    background-color: var(--color-red-vibrant-5);
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cadastro:hover {
+    background-color: var(--color-red-vibrant-6);
+}
+
+/*Finalizar styler*/
+.container-check{
+    display: flex;
+    margin-left: -15vh;
+    width: 199vh;
+    height: 73vh;
+    border-radius: 15px;
+    box-shadow: 20px 20px 30px rgb(225, 8, 8);
+}
+
+.container-check .pedido{
+    margin-left: 80vh;
+    padding: 20px;
+    display: flex;
+}
+
+
+#submit{
+    margin-left: 60px;
+    margin-top: 64vh;
+}
+
+.finalizar{
+    display: flex;
+    flex-direction: column;
+    margin-left: 75vh;
+    width: 40vh;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: -10px 0px 50px rgb(225, 8, 8);
+}

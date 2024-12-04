@@ -1,0 +1,30 @@
+footer {
+    background: url('../../images/wave\ \(1\).svg ') no-repeat center center;
+    background-size: cover; /* Ajusta a imagem para cobrir todo o espaço */
+    background-attachment: fixed; /* Faz a imagem de fundo ficar fixa ao rolar a página */
+    height: 100px; /* Aumente a altura do footer conforme necessário */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    text-align: center; /* Alinha o conteúdo de texto ao centro */
+}
+
+#footer_items {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    padding: 0px 8% 24px 8%;
+    gap: 20px; /* Ajuste o gap entre os itens */
+}
+
+#copyright {
+    color: var(--color-neutral-1);
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+    #footer_items {
+        flex-direction: column; /* Organiza os itens verticalmente em telas pequenas */
+        gap: 20px;
+    }
+}

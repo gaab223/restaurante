@@ -1,0 +1,97 @@
+
+/* Seção home */
+#home {
+    position: relative;
+    width: 100%; /* Add this line */
+    background-image: url('../../images/La\ travola.png');
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    height: 100vh; /* Define a altura como 100% da altura da janela */
+    overflow: hidden; /* Garante que elementos fora do contêiner não sejam visíveis */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+}
+
+header {
+    z-index: 10; /* Garante que o header esteja acima do #home */
+}
+
+/* Centraliza o CTA */
+#cta {
+    width: 60%;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1; /* Garante que o CTA fique acima do overlay */
+}
+
+/* Overlay para escurecer o fundo */
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Escurece o fundo */
+    z-index: 0; /* Fica atrás do conteúdo */
+}
+
+/* Botões e mídias sociais */
+#cta_buttons,
+.social-media-buttons {
+    margin-top: 20px; /* Distância do CTA */
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+/* Botões */
+#cta_buttons a {
+    text-decoration: none;
+    color: var(--color-neutral-1);
+    font-weight: 600;
+}
+
+#phone_button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+/* Ícones de mídia social */
+.social-media-buttons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-media-buttons a:hover {
+    color: var(--color-primary-6);
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    #cta {
+        width: 80%;
+    }
+
+    #cta .title {
+        font-size: 2.5rem;
+    }
+
+    #cta_buttons,
+    .social-media-buttons {
+        flex-wrap: wrap;
+    }
+}

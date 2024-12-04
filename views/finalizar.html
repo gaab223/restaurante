@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../views/styles/header.css">
+    
+
+    <style>
+        :root {
+
+            --color-red-vibrant-4: #ff3333;
+            --color-red-vibrant-5: #ff0000;
+            --color-red-vibrant-6: #cc0000;
+        }
+
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+
+        @media screen and (max-width: 600px) {
+            #page-title {
+                font-size: 1.5rem;
+            }
+
+            #navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        /* Conteúdo da Finalização */
+        #finalizacao {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        #pedidos {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        .pedido {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+            gap: 18px;
+            width: 25%;
+            padding: 20px;
+            background-color: var(--color-neutral-0);
+            box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pedido img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .pedido-titulo {
+            font-size: 1.2rem;
+            color: #434343;
+            text-align: center;
+        }
+
+        .pedido-descricao {
+            color: #434343;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        #total {
+            font-size: 1.5rem;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        .btn-finalizar {
+            background: var(--color-red-vibrant-5);
+            color: var(--color-neutral-0);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-finalizar:hover {
+            background: var(--color-red-vibrant-4);
+            transform: scale(1.05);
+        }
+
+        .btn-finalizar:active {
+            background: var(--color-red-vibrant-6);
+            transform: scale(1);
+        }
+
+        @media screen and (max-width: 1170px) {
+            .pedido {
+                width: calc(50% - 12px);
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .pedido {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav id="navbar">
+            <a href="index.html" id="nav_logo"><i class="fa-solid fa-utensils"></i> La Tavola</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <section id="finalizacao">
+        <div id="pedidos">
+            <div class="pedido">
+                <img src="src/images/item1.jpg" alt="Pedido 1">
+                <div class="pedido-titulo">Pedido 1</div>
+                <div class="pedido-descricao">Descrição detalhada do pedido 1.</div>
+            </div>
+            <div class="pedido">
+                <img src="src/images/item2.jpg" alt="Pedido 2">
+                <div class="pedido-titulo">Pedido 2</div>
+                <div class="pedido-descricao">Descrição detalhada do pedido 2.</div>
+            </div>
+            <div class="pedido">
+                <img src="src/images/item3.jpg" alt="Pedido 3">
+                <div class="pedido-titulo">Pedido 3</div>
+                <div class="pedido-descricao">Descrição detalhada do pedido 3.</div>
+            </div>
+        </div>
+        <div id="total">
+            Total: R$ <span id="valor-total">0,00</span>
+        </div>
+        <button class="btn-finalizar" onclick="finalizarPedido()">Finalizar Pedido</button>
+    </section>
+
+    <script>
+        function finalizarPedido() {
+            alert('Pedido finalizado com sucesso!');
+            document.getElementById('pedidos').innerHTML = '';
+            document.getElementById('valor-total').textContent = '0,00';
+        }
+    </script>
+</body>
+</html>

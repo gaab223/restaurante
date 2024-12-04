@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../views/styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../models/script.js"></script>
+    <title> cardapio page</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            
+            <a href="index.html" id="nav_logo"><i class="fa-solid fa-utensils"></i> La Tavola</a>
+
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#espetinho">Espetinho</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#hamburguer">Hamburguer</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Prato Feito">Prato Feito</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#drinks">Drinks</a>
+                </li>
+                <li class="nav-item">
+                    <button id="theme-toggle">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                </li>
+            </ul>
+
+            <button class="btn-default" style="color: white;" onclick="location.href='finalizar.html';">
+                Pedidos
+            </button>
+            
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default"   style="color: white;">
+                Peça aqui
+            </button>
+        </div>
+    </header>
+
+    <section id="espetinho">
+        <h2 class="section-title">Espetinho</h2>
+
+        <div id="dishes">
+            <div class="dish">
+             
+
+                <img src="../images/1.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Espetinho Prime
+                </h3>
+
+                <span class="dish-description">
+                    Preparado com cortes selecionados de picanha nobre, cada pedaço é temperado na medida certa para realçar o sabor natural da carne.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping" style="color: white;" ></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                
+
+                <img src="../images/esp-1.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                  Gourmet Tropical
+                </h3>
+
+                <span class="dish-description">
+                    Espetinho de frango marinando em suco de laranja e ervas frescas, grelhado com abacaxi caramelizado.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping" style="color: white;"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="">
+                    <i class=""></i>
+                </div>
+
+                <img src="../images/esp-2.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Espetinho da Vovó
+                </h3>
+
+                <span class="dish-description">
+                    Um clássico que não pode faltar: carne de boi macia, com cebola e pimentão, assados na brasa com o tempero simples e saboroso de alho e sal.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping" style="color: white;"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="">
+                    <i class=""></i>
+                </div>
+
+                <img src="../images/esp-3.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Espetinho do Mar
+                </h3>
+
+                <span class="dish-description">
+                    Espetinho de camarões temperados com alho, limão siciliano e pimenta rosa, assados na brasa e acompanhados de uma vinagrete refrescante de manga e coentro.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"  style="color: white;"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="dish">
+                <div class="">
+                    <i class=""></i>
+                </div>
+
+                <img src="../images/esp-4.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Picante do Sertão
+                </h3>
+
+                <span class="dish-description">
+                    Carne de sol, acompanhada de queijo coalho e pimentões, tudo coberto com uma pimenta biquinho doce e mel.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"  style="color: white;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+     </div>
+    
+    </div>
+    </section>
+
+    <section id="hamburguer">
+        <h2 class="section-title">Hambúrguer</h2>
+       
+
+        <div id="dishes">
+            <div class="dish">
+                <div class="">
+                    <i class=""></i>
+                </div>
+
+                <img src="../images/bg-0 (1).png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Big Bang Burger
+                </h3>
+
+                <span class="dish-description">
+                    Um verdadeiro colapso de sabores! Carne suculenta, bacon crocante, cheddar derretido, cebolas caramelizadas, alface fresca e um toque especial de molho barbecue defumado.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping" style="color: white;" ></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="">
+                    <i class=""></i>
+                </div>
+
+                <img src="../images/bg-2.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Volcano Melt
+                </h3>
+
+                <span class="dish-description">
+                    Prepare-se para a explosão! Hambúrguer com carne apimentada, queijo pepper jack, jalapeños, molho chipotle cremoso e uma camada generosa de cebolas crocantes.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping" style="color: white;"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="">
+                    <i class=""></i>
+                </div>
+
+                <img src="../images/bg-3.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Forest Bite
+                </h3>
+
+                <span class="dish-description">
+                    O sabor da natureza no seu prato! Hambúrguer com carne grelhada, cogumelos salteados no alho, queijo suíço, rúcula fresca e um leve toque de maionese de ervas.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping" style="color: white;"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="">
+                    <i class=""></i>
+                </div>
+
+                <img src="../images/bg-4.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Cheese Avalanche
+                </h3>
+
+                <span class="dish-description">
+                    Uma cascata irresistível de queijos! Hambúrguer com blend de carnes, uma combinação de queijos cheddar, mussarela e gorgonzola, molho de queijo cremoso e cebola crispy.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"  style="color: white;"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="dish">
+                <div class="">
+                    <i class=""></i>
+                </div>
+
+                <img src="../images/lch-1.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Sunny Delight
+                </h3>
+
+                <span class="dish-description">
+                    Perfeito para quem busca um sabor diferente! Hambúrguer com carne grelhada, queijo prato, fatia de abacaxi grelhado, alface americana, tomate fresco e molho especial cítrico.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"  style="color: white;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+    </section>
+
+    <section id="Prato Feito">
+        <h2 class="section-title">Prato Feito</h2>
+
+
+        <div id="dishes">
+            <div class="dish">
+                <div class="">
+                    <i class=""></i>
+                </div>
+
+                <img src="../images/pf-1.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                    Saudável
+                    </h3>
+
+                    <span class="dish-description">
+                        Combina frango desfiado suculento com batata doce caramelizada, arroz branco, legumes frescos e coloridos e feijão temperado. Uma explosão de sabores em cada garfada!
+                    </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping" style="color: white;" ></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="">
+                    <i class=""></i>
+                </div>
+
+                <img src="../images/prt-1.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Aurora Mediterrânea
+                </h3>
+
+                <span class="dish-description">
+                    filé de salmão grelhado, temperado com ervas finas, acompanhado de purê de batata-doce aromatizado com azeite de trufas e uma salada fresca de rúcula, tomate-cereja e nozes.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping" style="color: white;"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="">
+                    <i class=""></i>
+                </div>
+
+                <img src="../images/prt-2.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Sabor da Terra
+                </h3>
+
+                <span class="dish-description">
+                    Uma combinação reconfortante de mignon suíno ao molho de vinho tinto com especiarias, servido sobre um risoto cremoso de cogumelos frescos e finalizado com crocantes lascas de parmesão.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping" style="color: white;"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="">
+                    <i class=""></i>
+                </div>
+
+                <img src="../images/prt-3.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Pérola Negra
+                </h3>
+
+                <span class="dish-description">
+                    Um sofisticado espaguete de tinta de lula salteado no azeite com camarões flambados, alho e um toque de limão siciliano.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"  style="color: white;"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="dish">
+                <div class="">
+                    <i class=""></i>
+                </div>
+
+                <img src="../images/prt-4.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Sol Poente
+                </h3>
+
+                <span class="dish-description">
+                    Um clássico reinventado: medalhão de filé mignon ao molho de redução de laranja e gengibre, servido com batatas rústicas e aspargos grelhados.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(100+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"  style="color: white;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+    </section>
+
+    <section id="drinks">
+    
+        <h2 class="section-title">Drinks </h2>
+
+        <div id="dishes">
+            <div class="dish">
+                <div class="">
+                    <i class=""></i>
+                </div>
+
+                <img src="../images/dk-1 (1).png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Blue Lagoon
+                </h3>
+
+                <span class="dish-description">
+                    Servido em um copo alto com bastante gelo, sua cor azul cristalina remete às águas tropicais, tornando-o perfeito para festas, encontros ou momentos de relaxamento.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping" style="color: white;" ></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="">
+                    <i class=""></i>
+                </div>
+
+                <img src="../images/dk-6.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Mar Vermelho
+                </h3>
+
+                <span class="dish-description">
+                    É uma explosão de sabores que combina o doce profundo do licor de cereja com a leveza do rum branco e a acidez do suco de limão.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping" style="color: white;"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="">
+                    <i class=""></i>
+                </div>
+
+                <img src="../images/dk-3.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Berry Bliss
+                </h3>
+
+                <span class="dish-description">
+                    Uma mistura vibrante de frutas vermelhas! Morango, amora e framboesa batidos com vodca, xarope de açúcar e limão siciliano.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping" style="color: white;"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="">
+                    <i class=""></i>
+                </div>
+
+                <img src="../images/dk-2.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Sunset Mojito
+                </h3>
+
+                <span class="dish-description">
+                    Um clássico com um toque especial! Rum branco, suco de limão, açúcar demerara, folhas de hortelã e um leve toque de xarope de maracujá. 
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"  style="color: white;"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="dish">
+                <div class="">
+                    <i class=""></i>
+                </div>
+
+                <img src="../images/dk-5.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Kiwi Fresh
+                </h3>
+
+                <span class="dish-description">
+                    Feito com suco de kiwi fresco, vodca, xarope de açúcar e suco de limão siciliano, é servido com gelo e finalizado com uma rodela de kiwi e folhas de hortelã para decorar
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"  style="color: white;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+    </section>
+
+    <footer>
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2024 - Todos os direitos reservados
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+ 
+</body>
+
+    <!-- Script no final do body -->
+    <script>
+        const basketIcon = document.getElementById("basket-icon");
+        basketIcon.addEventListener("click", () => {
+            window.location.href = "finalizar.html";
+        });
+    </script>
+</html>
